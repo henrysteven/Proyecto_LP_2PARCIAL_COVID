@@ -12,8 +12,7 @@
 
     <?php 
         include("insert.php"); 
-        include("funciones_disenio_frontend.php");
-        
+        //include("funciones_disenio_frontend.php");  
     ?>
     <h1>Formulario de Covid 19</h1>
     <form>

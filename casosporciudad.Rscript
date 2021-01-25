@@ -19,3 +19,4 @@ barplot(table(ciudades), main = "Casos de COVID por ciudad")
 on.exit(dbDisconnect(mydb))
 
 
+

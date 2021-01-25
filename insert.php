@@ -26,7 +26,7 @@
         }
         $link -> close();
     }
-    //insertar_Persona('1650648432','Steven','Pluas','Quito','no','ninguno','no','Maa','no','24','2021-01-21','ninguno');        
+    insertar_Persona('1650648435','Ruth Leonor','Pluas Lopez','Guayas','no','ninguno','no','F','no','24','2021-01-21','ninguno');        
     //insertar_Fallecido("0985046813","YYY","zzz","M","ninguna","no","0950648139");     
 
 ?>

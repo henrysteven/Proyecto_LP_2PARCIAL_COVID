@@ -6,7 +6,7 @@ db_table <- 'Persona'
 db_host <- 'remotemysql.com' # for local access
 db_port <- 3306
 # 3. Read data from db
-setwd("C:/xampp/htdocs")
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 mydb <-  dbConnect(MySQL(), user = db_user, password = db_password,
                    dbname = db_name, host = db_host, port = db_port)
 s <- paste0("select * from ", db_table)
@@ -21,7 +21,9 @@ lbls <- data$sintomas
 lbls <- paste(lbls, percents)
 lbls <- paste(lbls, "%", sep="")
 lbls
-png(filename = "piecharsintomas.png", width = 500, height = 500)
+setwd("..")
+getwd()
+png(filename = "imagenes\\piecharsintomas.png", width = 500, height = 500)
 pie(data$Freq, labels = lbls, col = rainbow(length(lbls)),main = "Piechart de sintomas de pacientes")
 dev.off()
 on.exit(dbDisconnect(mydb))

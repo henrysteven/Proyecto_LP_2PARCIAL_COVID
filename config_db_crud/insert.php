@@ -1,5 +1,4 @@
 <?php
-
     function insertar_Fallecido($cedula_fallecido,$nombre_fallecido,$apellido_fallecido,$sexo,$causa_muerte_oficial,$caso_sospechoso_covid,$cedula){
         include("conexion.php");
         $sql = "SHOW DATABASES";

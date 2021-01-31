@@ -4,7 +4,7 @@
                     "Orellana","Pastaza","Pichincha","Santa Elena","Santo Domingo de los Tsáchilas",
                     "Sucumbíos","Tungurahua","Zamora Chinchipe");
     $doc = new DOMDocument();
-    $doc -> loadHTMLFile("formulario.php");
+    $doc -> loadHTMLFile("vistas/formulario.html");
     $selector = $doc->getElementById("selector-ciudad");
     foreach($ciudades as $ciudad){
         $tag_option = $doc -> createElement('option');

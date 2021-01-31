@@ -13,12 +13,17 @@ s <- paste0("select * from ", db_table)
 rs <- dbSendQuery(mydb, s)
 df <-  fetch(rs, n = -1)
 formacontagio <- df$forma_contagio[df$covid != "no"]
+data <- data.frame(table(formacontagio))
+percents <- (data$Freq/sum(data$Freq))*100
 formacontagio
+lbls <- data$formacontagio
+lbls <- paste(lbls, percents)
+lbls <- paste(lbls, "%", sep="")
 setwd("..")
 getwd()
 png(filename = "imagenes\\formacontagio.png", width = 500, height = 500)
 
-barplot(table(formacontagio), main = "Formas de contagio")
+pie(data$Freq, labels = lbls, col = rainbow(length(lbls)),main = "Piechart de formas de contagio")
 dev.off()
 on.exit(dbDisconnect(mydb))
 

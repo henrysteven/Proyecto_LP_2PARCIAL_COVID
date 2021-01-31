@@ -12,11 +12,18 @@ mydb <-  dbConnect(MySQL(), user = db_user, password = db_password,
 s <- paste0("select * from ", db_table)
 rs <- dbSendQuery(mydb, s)
 df <-  fetch(rs, n = -1)
-ciudades <- df$ciudad[df$covid == "si"]
+covid <- df$covid
+edad <- df$edad
+grupoedad <- cut(edad, breaks=c(0,13,21,30,60,Inf))
+grupoedad
+table(grupoedad)
+data <- data.frame(covid,grupoedad)
+data
 setwd("..")
 getwd()
-png(filename = "imagenes\\casosporciudad.png", width = 500, height = 500)
-barplot(table(ciudades), main = "Casos de COVID por ciudad")
+png(filename = "imagenes\\edadycovid.png", width = 500, height = 500)
+barplot(table(data),names.arg = c("0-13", "13-21", "21-30", "30-60","60+"), col = c("blue","red"), beside = TRUE)
+legend("topright", c("negativo","positivo"),fill= c("blue","red"))
 dev.off()
 on.exit(dbDisconnect(mydb))
 

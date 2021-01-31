@@ -13,19 +13,15 @@ s <- paste0("select * from ", db_table)
 rs <- dbSendQuery(mydb, s)
 df <-  fetch(rs, n = -1)
 df
-sintomas <- df$sintomas[df$covid != "no"]
-data <- data.frame(table(sintomas))
-percents <- (data$Freq/sum(data$Freq))*100
-percents
-lbls <- data$sintomas
-lbls <- paste(lbls, percents)
-lbls <- paste(lbls, "%", sep="")
-lbls
+hospital <- df$hospitalizado
+sintomas <- df$sintomas
+data <- data.frame(hospital,sintomas)
+data
 setwd("..")
 getwd()
-png(filename = "imagenes\\piecharsintomas.png", width = 500, height = 500)
-pie(data$Freq, labels = lbls, col = rainbow(length(lbls)),main = "Piechart de sintomas de pacientes")
+png(filename = "imagenes\\sintomascovid.png", width = 500, height = 500)
+barplot(table(data), col = c("blue","red"), beside = TRUE)
+legend("topright", c("no hospitalizado","hospitalizado"),fill= c("blue","red"))
 dev.off()
 on.exit(dbDisconnect(mydb))
-
 

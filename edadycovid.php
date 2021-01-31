@@ -7,9 +7,9 @@
     <?php
       // Execute the R script within PHP code
       // Generates output as test.png image.
-      exec("casosporciudad.Rscript");
+      exec("R\\edadycovid.Rscript");
     ?>
-    <img src=casosporciudad.png alt=”R Graph” />
+    <img src=imagenes\edadycovid.png alt=”R Graph” />
     </div>
   </body>
 </html>

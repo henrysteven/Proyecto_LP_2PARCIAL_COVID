@@ -1,43 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="css//style.css" rel="stylesheet" type="text/css">
+    <link href="..//css//style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
     <h1>Formulario de Covid 19</h1>
-    <form>
+    <form method="POST">
         <div class="form-row">
-            <div class="col-md-4 mb-3">
-                <label for="validationDefault01">Nombres</label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationDefault02">Apellidos</label>
-                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="" required>
+            <div class="col-md-6 mb-3 titulos">
+                <label for="validationDefault03">Número de Cédula</label>
+                <input type="text" class="form-control" id="validationDefault03" name="cedula" placeholder="Cédula" required>
             </div>
         </div>
         <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="validationDefault03">Ciudad</label>
-                <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+            <div class="col-md-4 mb-3 titulos">
+                <label for="validationDefault01">Nombres</label>
+                <input type="text" class="form-control" id="validationDefault01" name="nombres" placeholder="Nombres" value="" required>
+            </div>
+            <div class="col-md-4 mb-3 titulos">
+                <label for="validationDefault02">Apellidos</label>
+                <input type="text" class="form-control" id="validationDefault02" name= "apellidos" placeholder="Apellidos" value="" required>
             </div>
         </div>
         <div>
-            <select class="form-control" id="selector-ciudad">
-                <option>Default select</option>
+            <label class="form-check-label titulos" for="exampleRadios1">Sexo</label>
+            <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="sexo_masculino" value="M" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Masculino
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="sexo_femenino" value="F">
+                <label class="form-check-label" for="exampleRadios2">
+                    Femenino
+                </label>
+            </div>
+        </div>
+        <br>
+        <div class="form-group row">
+            <label for="edad" class="col-1 col-form-label titulos">Edad</label>
+              <input class="form-control" type="number" value="20" id="edad" name="edad">
+          </div>
+          <br>
+        <div class="col-3">
+            <label for="ciudad" class="titulos">Ciudad</label>
+            <select class="form-control" id="selector-ciudad" name="ciudad" required>
             </select>
         </div>
+        <div>
+            <label class="form-check-label titulos" for="exampleRadios1">Tuvo COVID-19 confirmado por médicos</label>
+            <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tuvo_covid" id="exampleRadios1" value="si" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    SI
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tuvo_covid" id="exampleRadios2" value="no">
+                <label class="form-check-label" for="exampleRadios2">
+                    NO
+                </label>
+            </div>
+        </div>
+    
+        <div>
+            <label for="forma_contagio" class="titulos">Como se contagio</label>
+            <select class="form-control" id="forma-contagio" name="forma_contagio">
+                <option>Ninguno</option>
+                <option>Amigos</option>
+                <option>Trabajo</option>
+                <option>Colegio</option>
+                <option>Universidad</option>
+                <option>Familiar</option>
+                <option>Otro</option>
+            </select>
+        </div>
+        <div>
+            <label for="sintomas" class="titulos">Síntomas</label>
+            <div class="form-check" required>
+                <input class="form-check-input" type="checkbox" name="check[]" value="Dolor de Cabeza">
+                <label class="form-check-label" for="ninguno">Dolor de Cabeza</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" id="Diarrea" value="Diarrea">
+                <label class="form-check-label" for="Diarrea">Diarrea</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="Vómito">
+                <label class="form-check-label" for="Vomito">Vómito</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="Congestión">
+                <label class="form-check-label" for="inlineCheckbox2">Congestión</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="Dificultad al respirar">
+                <label class="form-check-label" for="inlineCheckbox2">Dificultad al respirar</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Perdida del gusto</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="Perdida del Olfato">
+                <label class="form-check-label" for="inlineCheckbox2">Perdida del Olfato</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="Dolores Musculares o Corporal">
+                <label class="form-check-label" for="inlineCheckbox2">Dolores Musculares o Corporal</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="Escalofríos">
+                <label class="form-check-label" for="inlineCheckbox2">Escalofríos</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="Moqueo">
+                <label class="form-check-label" for="inlineCheckbox2">Moqueo</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="Fiebre">
+                <label class="form-check-label" for="inlineCheckbox2">Fiebre</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="Cansancio">
+                <label class="form-check-label" for="inlineCheckbox2">Cansancio</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="Tos Seca">
+                <label class="form-check-label" for="inlineCheckbox2">Tos Seca</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="check[]" value="ninguno">
+                <label class="form-check-label" for="inlineCheckbox2">Ninguno</label>
+              </div>
+              
+        </div>
+        <div>
+            <label class="form-check-label titulos" for="exampleRadios1">Estuvo Hospitalizado</label>
+            <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="hospitalizado" value="si" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    SI
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="hospitalizado" value="no">
+                <label class="form-check-label" for="exampleRadios2">
+                    NO
+                </label>
+            </div>
+        </div>
         <div class="form-group">
-            <div class="form-check">
+            <div class="form-check" id="condiciones">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                 <label class="form-check-label" for="invalidCheck2">
-                    Agree to terms and conditions
+                    Acepta que sus datos sean usados con propósitos estadísticos.
+                </label>
+                <br>
+                <label class="form-check-label" for="invalidCheck2">
+                    Verifique que sus datos esten correctamente ingresados.
                 </label>
             </div>
         </div>

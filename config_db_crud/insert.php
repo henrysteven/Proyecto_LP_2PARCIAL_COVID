@@ -20,17 +20,13 @@
         $query = "INSERT INTO Persona (cedula, nombre, apellido, ciudad, covid, forma_contagio, tuvo_sintomas, sexo, hospitalizado, edad, fecha, sintomas) VALUES ('$cedula','$nombre','$apellido','$ciudad','$covid','$forma_contagio','$tuvo_sintomas','$sexo','$hospitalizados','$edad','$fecha','$sintomas')";
         $result = mysqli_query($link, $query);
         if ($result){
-            $cadena = '<div id=mensaje>Datos guardados correctamente</div>';
+            $cadena = '<div class = "mensaje" id=mensaje>Datos guardados correctamente</div>';
             echo $cadena;
         }else{
-            echo "<div id=mensaje2>" . mysqli_error($link).'</div>';
+            echo "<div class ='mensaje' id=mensaje2>" . mysqli_error($link).'</div>';
         }
         $link -> close();
     }
-<<<<<<< HEAD
-=======
-    insertar_Persona('1203478135','Ruth Leonor','Pluas Lopez','Guayas','si','ninguno','si','F','si','24','2021-01-21','fiebre');        
->>>>>>> 4bed3a7a26497f56fc83a1e0478d82edb260bdd6
     //insertar_Fallecido("0985046813","YYY","zzz","M","ninguna","no","0950648139");     
   /*   $linea = 0;
     //Abrimos nuestro archivo

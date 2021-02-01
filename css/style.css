@@ -95,3 +95,6 @@ input[type="button"] {
   .formulario{
       color: white;
   }
+  .mensaje{
+      margin-bottom: 50px;
+  }

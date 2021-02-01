@@ -9,7 +9,7 @@
             $cadena = '<div id=mensaje>Datos guardados correctamente</div>';
             echo $cadena;
         }else{
-            echo "<div id=mensaje2>" . mysqli_error($link).'</div>';
+            echo "" . mysqli_error($link);
         }
         $link -> close();
     } 
@@ -27,11 +27,7 @@
         }
         $link -> close();
     }
-<<<<<<< HEAD
-=======
-    insertar_Persona('1203478135','Ruth Leonor','Pluas Lopez','Guayas','si','ninguno','si','F','si','24','2021-01-21','fiebre');        
->>>>>>> 4bed3a7a26497f56fc83a1e0478d82edb260bdd6
-    //insertar_Fallecido("0985046813","YYY","zzz","M","ninguna","no","0950648139");     
+   
   /*   $linea = 0;
     //Abrimos nuestro archivo
     $archivo = fopen("../datos2.csv", "r");
@@ -54,9 +50,9 @@
         $fecha = $datos[10];
         $sintomas = $datos[11];
         insertar_Persona($cedula,$nombre,$apellido,$ciudad,$covid,$forma_contagio,$tuvo_sintomas,$sexo,$hospitalizados,$edad,$fecha,$sintomas);
-    }
+    }*/
     //Cerramos el archivo
-    fclose($archivo); 
+    //fclose($archivo); 
     $linea = 0;
     //Abrimos nuestro archivo
     $archivo = fopen("../datos3.csv", "r");
@@ -77,5 +73,4 @@
     }
     //Cerramos el archivo
     fclose($archivo);
-    */
 ?>

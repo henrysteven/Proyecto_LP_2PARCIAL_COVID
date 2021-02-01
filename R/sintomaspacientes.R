@@ -13,11 +13,64 @@ rs <- dbSendQuery(mydb, s)
 df <-  fetch(rs, n = -1)
 hospital <- df$hospitalizado
 sintomas <- df$sintomas
-data <- data.frame(hospital,sintomas)
+i <- 1
+unicossintomas <- c()
+sintomas
+for(sintomaarray in sintomas){
+  sintomaarray
+  sintomasplit <- strsplit(sintomaarray, ",")
+  sintomasplit
+  if(sintomaarray != ""){
+    for(sintoma2 in sintomasplit){
+      for(sintomaunico in sintoma2){
+        check<- substring(sintomaunico,1,1)
+        if(check == " "){
+          sintomaunico <- substring(sintomaunico,2)
+        }
+        if(!is.element(sintomaunico,unicossintomas)){
+          unicossintomas[i] <- sintomaunico
+          i <- i+1
+        }
+      }
+    }
+  }
+}
+sihospitalizados <- numeric(length(unicossintomas))
+nohospitalizados <- numeric(length(unicossintomas))
+i <- 1
+for(sintomaarray in sintomas){
+  sintomaarray
+  sintomasplit <- strsplit(sintomaarray, ",")
+  sintomasplit
+  if(sintomaarray != ""){
+    for(sintoma2 in sintomasplit){
+      for(sintomaunico in sintoma2){
+        check<- substring(sintomaunico,1,1)
+        if(check == " "){
+          sintomaunico <- substring(sintomaunico,2)
+        }
+        index = which(sintomaunico == unicossintomas)[[1]]
+        if(hospital[i] == "si"){
+          sihospitalizados[index] = sihospitalizados[index] +1
+        }
+        if(hospital[i] == "no"){
+          nohospitalizados[index] = nohospitalizados[index] +1
+        }
+      }
+    }
+  }
+  i <- i+1
+}
+data <- data.frame(unicossintomas,sihospitalizados,nohospitalizados)
+
+value_matrix <- matrix( nrow = 2, ncol = length(unicossintomas))
+value_matrix[1,]<- data$sihospitalizados
+value_matrix[2,]<- data$nohospitalizados
 setwd('..')
-png(filename = "imagenes\\sintomaspacientes.png", width = 500, height = 500)
-barplot(table(data), col = c("blue","red"), beside = TRUE)
-legend("topright", c("no hospitalizado","hospitalizado"),fill= c("blue","red"))
+png(filename = "imagenes\\sintomaspacientes.png", width = 800, height = 600)
+par(mar= c(10, 4.5, 2, 2) + 0.1)
+barplot(value_matrix,names.arg = unicossintomas, col = c("red","blue"), beside = TRUE, las = 2, cex.names = 0.70)
+legend("topleft", c("hospitalizado","no hospitalizado"),fill= c("red","blue"), cex = 0.75)
 dev.off()
 on.exit(dbDisconnect(mydb))
 

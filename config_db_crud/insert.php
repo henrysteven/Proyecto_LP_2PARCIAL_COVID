@@ -27,6 +27,10 @@
         }
         $link -> close();
     }
+<<<<<<< HEAD
+=======
+    insertar_Persona('1203478135','Ruth Leonor','Pluas Lopez','Guayas','si','ninguno','si','F','si','24','2021-01-21','fiebre');        
+>>>>>>> 4bed3a7a26497f56fc83a1e0478d82edb260bdd6
     //insertar_Fallecido("0985046813","YYY","zzz","M","ninguna","no","0950648139");     
   /*   $linea = 0;
     //Abrimos nuestro archivo

@@ -1,0 +1,101 @@
+nombre,apellido,cedula,covid,ciudad,forma_contagio,tuvo_sintomas,sexo,hospitalizado,edad,fecha,sintomas
+Lee,Ortega,33070775-5,si,Azuay,amigo,si,M,si,36,2021-03-17,"Náuseas, tos seca, Moqueo, Diarrea, Escalofríos, cansancio, Dolor de cabeza, Perdidad del Gusto"
+Blaze,Buck,25893194-7,si,Azuay,amigo,si,M,si,52,2021-01-06,"tos seca, Congestión, cansancio"
+Justine,Horton,31711752-3,si,Azuay,amigo,si,M,si,35,2021-07-23,"Moqueo, Dolor de Cabeza, Náuseas, Dificultad al respirar, Dolor de cabeza"
+Evangeline,Guzman,12840688-3,si,Azuay,amigo,si,M,si,40,2021-06-20,"Diarrea, Dolor de Cabeza, Congestión, Náuseas, Dificultad al respirar, Perdida del Olfato, fiebre, Dolores musculares o corporales"
+Ethan,Daniels,49022222-7,si,Azuay,amigo,si,M,si,39,2020-08-23,
+Wendy,Guerra,10522666-7,si,Azuay,amigo,si,M,si,36,2021-05-09,"Dolor de cabeza, Perdida del Olfato, Dolor de Cabeza"
+Ian,Daniels,13257793-5,si,Azuay,amigo,si,M,si,67,2021-10-30,"tos seca, Dolores musculares o corporales, Perdidad del Gusto"
+Nina,Compton,40849367-6,si,Azuay,amigo,si,M,si,56,2020-02-11,Dolores musculares o corporales
+Amal,Hayes,30786548-3,si,Azuay,amigo,si,M,si,58,2020-11-08,"cansancio, Perdidad del Gusto, Náuseas, fiebre, Moqueo, Diarrea, Dolores musculares o corporales"
+Tate,Irwin,16463268-7,si,Azuay,amigo,si,M,si,40,2021-08-30,"Vómito, fiebre, Dolor de cabeza, Náuseas, Escalofríos, Dolor de Cabeza"
+Vanna,Gay,30555834-6,no,Bolívar,familiar,no,F,no,73,2022-01-27,"cansancio, Náuseas, Diarrea, Moqueo"
+Ursa,Stevenson,21279053-2,no,Bolívar,familiar,no,F,no,45,2021-07-15,Dolores musculares o corporales
+Zelda,Reese,49879250-2,no,Bolívar,familiar,no,F,no,39,2020-05-26,"Perdida del Olfato, Dolor de Cabeza, Congestión, Dolor de cabeza, Perdidad del Gusto"
+Desiree,Mclean,24108457-4,no,Bolívar,familiar,no,F,no,54,2021-04-10,"Moqueo, Perdidad del Gusto"
+Xandra,Green,44728998-9,no,Bolívar,familiar,no,F,no,32,2021-11-23,"Dificultad al respirar, Escalofríos, Dolores musculares o corporales, Náuseas"
+Harriet,Crane,13768632-5,no,Bolívar,familiar,no,F,no,37,2020-02-04,"Moqueo, Dolor de cabeza, Vómito, Náuseas, Dificultad al respirar"
+Marny,Jordan,29251881-1,no,Bolívar,familiar,no,F,no,21,2020-02-11,"fiebre, Escalofríos, Perdida del Olfato, Vómito, Dolor de Cabeza"
+Xena,Rosales,47312810-1,no,Bolívar,familiar,no,F,no,37,2020-02-19,"Vómito, Congestión, Náuseas"
+Paula,Wong,25233524-2,no,Bolívar,familiar,no,F,no,68,2021-08-06,"cansancio, Congestión, fiebre, Dolor de Cabeza, Dolor de cabeza, Moqueo, Dolores musculares o corporales, Vómito"
+Catherine,Salinas,25948248-8,no,Bolívar,familiar,no,F,no,20,2020-02-08,
+Yetta,Daniels,6557171-4,si,Cañar,trabajo,si,M,si,80,2021-10-30,"cansancio, Perdida del Olfato, Dificultad al respirar, Dolor de Cabeza, Perdidad del Gusto, Escalofríos"
+Elvis,Booker,18821869-5,si,Cañar,trabajo,si,M,si,76,2020-11-03,"fiebre, Náuseas, Escalofríos, Dificultad al respirar, Dolor de cabeza, Perdida del Olfato, Dolor de Cabeza"
+Patrick,Slater,21612392-1,si,Cañar,trabajo,si,M,si,32,2020-06-24,"tos seca, Escalofríos, Perdidad del Gusto, cansancio, fiebre, Perdida del Olfato"
+Hoyt,Orr,22271144-4,si,Cañar,trabajo,si,M,si,44,2022-01-18,
+Burton,Beasley,17710534-1,si,Cañar,trabajo,si,M,si,13,2021-12-01,"Perdidad del Gusto, cansancio, Náuseas, Dificultad al respirar, Dolor de Cabeza, tos seca, Escalofríos"
+Oleg,Winters,20174258-7,si,Cañar,trabajo,si,M,si,7,2020-06-29,"Vómito, Dolor de cabeza, Perdida del Olfato, Escalofríos, cansancio, Congestión"
+Lyle,Pope,20097256-2,si,Cañar,trabajo,si,M,si,80,2021-08-11,
+Laura,Ballard,26478162-0,si,Cañar,trabajo,si,M,si,25,2020-02-16,"Dolor de Cabeza, cansancio"
+Hashim,Brooks,11745260-3,si,Cañar,trabajo,si,M,si,20,2021-08-21,"tos seca, Moqueo, Perdidad del Gusto"
+Hayden,Hewitt,29213361-8,si,Cañar,trabajo,si,M,si,47,2020-07-01,Dolor de cabeza
+Destiny,Flynn,16223469-2,no,Carchi,colegio,no,F,no,10,2021-09-10,
+Nash,Reese,46213066-k,no,Carchi,colegio,no,F,no,52,2020-12-19,"fiebre, Congestión, Náuseas"
+Orlando,Dillon,8476272-5,no,Carchi,colegio,no,F,no,73,2020-08-29,"tos seca, Náuseas, Perdidad del Gusto, Diarrea, Vómito, Dolores musculares o corporales, Escalofríos"
+Lesley,Hughes,7033496-8,no,Carchi,colegio,no,F,no,17,2020-04-20,Perdidad del Gusto
+Oren,Alvarez,21115931-6,no,Carchi,colegio,no,F,no,37,2021-07-05,"Dolores musculares o corporales, Dificultad al respirar, Moqueo, Náuseas, tos seca, Escalofríos"
+Maris,Ingram,13308138-0,no,Carchi,colegio,no,F,no,65,2020-10-16,"tos seca, Vómito, fiebre, cansancio, Congestión, Perdidad del Gusto, Náuseas"
+Cecilia,Langley,39689381-9,no,Carchi,colegio,no,F,no,73,2021-04-08,"Dolor de cabeza, Náuseas, cansancio, Moqueo, Diarrea, Dificultad al respirar, fiebre, Congestión"
+Declan,Holcomb,6769196-2,no,Carchi,colegio,no,F,no,49,2020-10-08,Diarrea
+Samuel,Marshall,9368816-3,no,Carchi,colegio,no,F,no,31,2022-01-26,"tos seca, Dolor de cabeza, Perdida del Olfato"
+Maxine,Thornton,24434138-1,no,Carchi,colegio,no,F,no,54,2020-02-19,"Perdida del Olfato, Vómito, tos seca, Escalofríos"
+Amir,Odonnell,47576572-9,si,Chimborazo,universidad,si,M,si,52,2021-11-02,"Dolor de cabeza, Diarrea, Dificultad al respirar, Perdida del Olfato, Congestión"
+Zenaida,David,22852227-9,si,Chimborazo,universidad,si,M,si,28,2020-11-11,"Dolores musculares o corporales, Perdidad del Gusto, Náuseas, Dolor de cabeza"
+Roth,Gallagher,36243765-2,si,Chimborazo,universidad,si,M,si,22,2020-12-22,
+Jessica,Peck,44716313-6,si,Chimborazo,universidad,si,M,si,46,2021-10-28,"Dolor de cabeza, cansancio, Dolor de Cabeza, Perdida del Olfato, Dificultad al respirar"
+Mark,Becker,27776819-4,si,Chimborazo,universidad,si,M,si,79,2020-07-16,"Náuseas, cansancio, Dolor de cabeza, Congestión, tos seca, fiebre"
+Nayda,Bernard,49213147-4,si,Chimborazo,universidad,si,M,si,34,2020-05-05,"Dolor de Cabeza, tos seca, Moqueo, Dificultad al respirar, Perdida del Olfato, Náuseas, Vómito"
+Ezekiel,Navarro,33304798-5,si,Chimborazo,universidad,si,M,si,14,2020-11-19,"Dificultad al respirar, Perdidad del Gusto, Náuseas, Dolor de Cabeza, cansancio, Congestión, Dolores musculares o corporales"
+Tatiana,Aguirre,48324219-0,si,Chimborazo,universidad,si,M,si,42,2020-11-19,"Dolores musculares o corporales, Dolor de cabeza, tos seca, fiebre, cansancio, Náuseas, Dificultad al respirar, Moqueo"
+Claudia,Christian,21136660-5,si,Chimborazo,universidad,si,M,si,43,2020-10-31,"Congestión, Dolor de Cabeza, cansancio, Dificultad al respirar, Vómito"
+Amena,Padilla,28985514-9,si,Chimborazo,universidad,si,M,si,64,2021-05-28,
+Cecilia,Rodriquez,34405988-8,no,Cotopaxi,otro,no,F,no,41,2021-09-28,Perdida del Olfato
+Risa,Hendrix,25501391-2,no,Cotopaxi,otro,no,F,no,29,2020-12-24,"Perdidad del Gusto, Náuseas, Escalofríos"
+Roanna,Patrick,28695228-3,no,Cotopaxi,otro,no,F,no,52,2020-08-14,Moqueo
+Hoyt,Jensen,34179126-k,no,Cotopaxi,otro,no,F,no,24,2021-01-22,"Perdidad del Gusto, Diarrea"
+Kristen,Mathews,17522585-4,no,Cotopaxi,otro,no,F,no,59,2020-05-29,"Náuseas, fiebre, Escalofríos, Dificultad al respirar, cansancio"
+Tara,Powers,36016784-4,no,Cotopaxi,otro,no,F,no,17,2020-10-11,"Vómito, Perdida del Olfato, Náuseas, Moqueo, Perdidad del Gusto"
+Kirk,Dunlap,6246895-5,no,Cotopaxi,otro,no,F,no,51,2021-04-19,"fiebre, Perdida del Olfato, Vómito, Moqueo, Congestión"
+Tatiana,Harrison,10203882-7,no,Cotopaxi,otro,no,F,no,23,2020-04-12,"Congestión, Vómito, fiebre, Perdidad del Gusto, Diarrea, Dolores musculares o corporales"
+Henry,Wilkerson,13716965-7,no,Cotopaxi,otro,no,F,no,9,2020-08-11,
+Quentin,Navarro,5748819-0,no,Cotopaxi,otro,no,F,no,59,2021-03-30,"Perdidad del Gusto, Vómito, tos seca, Diarrea, Moqueo, Perdida del Olfato"
+Teegan,Wilkinson,44144155-k,si,El Oro,amigo,si,M,si,33,2022-01-23,"Perdidad del Gusto, Náuseas"
+Hiroko,Rodgers,45576660-5,si,El Oro,amigo,si,M,si,13,2020-02-11,
+Shelley,Greer,8806284-1,si,El Oro,amigo,si,M,si,60,2020-08-18,"Dificultad al respirar, fiebre, Moqueo, Dolores musculares o corporales, Dolor de Cabeza"
+Abbot,Moses,49096407-k,si,El Oro,amigo,si,M,si,18,2020-10-14,"tos seca, Vómito, Perdida del Olfato, Moqueo, cansancio, Dolor de cabeza, Congestión"
+Xerxes,Sandoval,14701556-9,si,El Oro,amigo,si,M,si,61,2021-02-19,"Perdida del Olfato, Dificultad al respirar"
+Aquila,Hewitt,18713941-4,si,El Oro,amigo,si,M,si,16,2021-10-04,"Perdida del Olfato, Náuseas, Dolor de Cabeza, Vómito"
+Emerald,Greene,28826762-6,si,El Oro,amigo,si,M,si,69,2020-07-13,"tos seca, Escalofríos, fiebre, Congestión, Dolores musculares o corporales, Perdida del Olfato, Dolor de Cabeza"
+Shea,Francis,29194707-7,si,El Oro,amigo,si,M,si,24,2022-01-06,cansancio
+Fitzgerald,Oconnor,30072550-3,si,El Oro,amigo,si,M,si,34,2021-08-11,"Perdida del Olfato, Dolor de Cabeza, tos seca, Moqueo, Vómito"
+Noelani,Fletcher,43176894-1,si,El Oro,amigo,si,M,si,36,2021-03-04,"Dificultad al respirar, Perdidad del Gusto"
+Yasir,Stewart,24594924-3,no,Esmeraldas,familiar,no,F,no,72,2020-10-14,"Dolores musculares o corporales, tos seca, Perdidad del Gusto, Congestión, Escalofríos, Perdida del Olfato, Dificultad al respirar"
+Beatrice,Oneill,32030959-k,no,Esmeraldas,familiar,no,F,no,49,2021-07-27,"Vómito, Congestión, Dolores musculares o corporales, Perdida del Olfato, cansancio"
+Jocelyn,Case,30412141-6,no,Esmeraldas,familiar,no,F,no,38,2020-03-24,"Congestión, Perdida del Olfato, Dolor de Cabeza"
+Ronan,Mejia,24388478-0,no,Esmeraldas,familiar,no,F,no,56,2021-02-05,"Moqueo, Diarrea, Vómito, cansancio, Perdida del Olfato, Dificultad al respirar"
+Allistair,Mann,22437884-k,no,Esmeraldas,familiar,no,F,no,53,2021-05-04,"Dolor de cabeza, Moqueo, cansancio, Dificultad al respirar"
+Daryl,Hernandez,44011982-4,no,Esmeraldas,familiar,no,F,no,56,2021-01-24,"Dolores musculares o corporales, Congestión, Perdidad del Gusto, Dolor de cabeza, Moqueo"
+Amery,Lancaster,22076649-7,no,Esmeraldas,familiar,no,F,no,21,2021-12-07,"Diarrea, Dolor de cabeza, Moqueo, Perdidad del Gusto"
+Nevada,Carpenter,34944507-7,no,Esmeraldas,familiar,no,F,no,52,2021-11-23,"Dificultad al respirar, tos seca, Moqueo, Dolor de Cabeza, fiebre, Perdidad del Gusto"
+Petra,Dyer,22482991-4,no,Esmeraldas,familiar,no,F,no,27,2020-08-22,
+Amery,Miles,5414972-7,no,Esmeraldas,familiar,no,F,no,18,2020-11-02,"Perdidad del Gusto, Dolor de cabeza, Perdida del Olfato, Congestión, Escalofríos"
+Asher,Myers,7187081-2,si,Galápagos,trabajo,si,M,si,76,2020-06-14,"tos seca, cansancio"
+Risa,Pratt,23194522-9,si,Galápagos,trabajo,si,M,si,65,2021-10-05,"Diarrea, Congestión, Dolor de cabeza, Moqueo"
+Chloe,Fuller,40974986-0,si,Galápagos,trabajo,si,M,si,10,2019-12-30,"Moqueo, Náuseas, Perdida del Olfato, Escalofríos, Dolor de Cabeza, Dolor de cabeza, tos seca"
+Yuli,Clay,44949930-1,si,Galápagos,trabajo,si,M,si,29,2020-08-23,"tos seca, Congestión, Perdidad del Gusto, Náuseas, cansancio"
+Pandora,Elliott,37849631-4,si,Galápagos,trabajo,si,M,si,57,2021-10-03,"Dolor de Cabeza, Congestión, Dificultad al respirar, Diarrea, Perdidad del Gusto"
+Tate,Gutierrez,29451165-2,si,Galápagos,trabajo,si,M,si,11,2021-11-24,"Dolores musculares o corporales, Moqueo, Perdidad del Gusto"
+Brynn,Herring,5959867-8,si,Galápagos,trabajo,si,M,si,51,2021-09-05,"Náuseas, fiebre, Dolor de Cabeza, Congestión, Perdida del Olfato, cansancio, Moqueo, Perdidad del Gusto"
+Rahim,Waller,16034327-3,si,Galápagos,trabajo,si,M,si,47,2020-04-03,"Congestión, Dolor de Cabeza, Vómito, Moqueo, Diarrea, Perdidad del Gusto"
+Philip,Kelley,10778285-0,si,Galápagos,trabajo,si,M,si,21,2020-06-24,"tos seca, Escalofríos, Moqueo, Dolores musculares o corporales, Congestión, Perdidad del Gusto"
+Shoshana,Guerra,35432508-k,si,Galápagos,trabajo,si,M,si,37,2020-05-30,
+Nash,Gallegos,43176048-7,no,Guayas,colegio,no,F,no,11,2020-02-07,"Diarrea, Perdida del Olfato, Náuseas, fiebre, cansancio, Moqueo, tos seca, Escalofríos"
+Robert,Craft,30081819-6,no,Guayas,colegio,no,F,no,44,2020-08-15,
+Fritz,Hobbs,15501372-9,no,Guayas,colegio,no,F,no,74,2020-05-18,"Moqueo, fiebre, Perdidad del Gusto, Dolores musculares o corporales, tos seca, Dolor de Cabeza, Congestión"
+Nicholas,Johnston,17030119-6,no,Guayas,colegio,no,F,no,6,2020-06-21,"Dolor de Cabeza, Escalofríos, Perdida del Olfato"
+Miriam,Henson,23196686-2,no,Guayas,colegio,no,F,no,11,2020-12-22,Moqueo
+Jennifer,Valentine,17731927-9,no,Guayas,colegio,no,F,no,14,2020-01-14,"Congestión, tos seca, Dolores musculares o corporales"
+Peter,Gamble,38299266-0,no,Guayas,colegio,no,F,no,60,2021-12-24,"Congestión, Perdidad del Gusto, Moqueo, fiebre"
+Deirdre,Parks,14173233-1,no,Guayas,colegio,no,F,no,30,2020-08-02,"Diarrea, Dolor de cabeza, Náuseas, fiebre, Congestión, Perdida del Olfato, tos seca"
+Cynthia,Mccray,12579171-9,no,Guayas,colegio,no,F,no,79,2021-09-29,"Perdida del Olfato, Perdidad del Gusto, Escalofríos, Congestión, Dificultad al respirar"
+Demetria,Fuller,31581000-0,no,Guayas,colegio,no,F,no,38,2021-03-18,Diarrea

@@ -10,16 +10,22 @@
 </head>
 
 <body>
-    <h1>Borrar usuario de la base de datos</h1>
-    <form action = "../config_db_crud/delete.php" method="post">
+    <h1 class = "title">Borrar usuario de la base de datos</h1>
+    <form action = "../config_db_crud/delete.php"  method="post">
         <div class="form-row">
-            <div class="col-md-4 mb-3">
-                <label for="validationDefault01">Cedula</label>
-                <input type="text" class="form-control" name ="cedulaborrar" placeholder="Cedula" value="" required>
+            <div class="col-md-4 mb-3 centerdiv">
+                <label class = "centerdiv labeltext">Cedula</label>
+                <input type="text" class="form-control centerdiv" name ="cedulaborrar" placeholder="Cedula" value="" required>
             </div>
         </div>
-        <button class="btn btn-primary" type="submit">Borrar</button>
+        <div class ="buttonrow">
+            <button class="btn btn-primary btnstyle" type="submit">Borrar</button>
+        </div>
+       
     </form>
-    <button class="btn btn-primary" onclick = "location.href='seleccionformularios.html'">Volver</button>
+    <div class = "buttonrow">
+  <button class="btn btn-primary btnstyle" onclick = "location.href='seleccionformularios.html'">Volver</button>
+    </div>
+  
 </body>
 </html>

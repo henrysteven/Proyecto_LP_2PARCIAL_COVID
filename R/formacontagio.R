@@ -14,6 +14,7 @@ df <-  fetch(rs, n = -1)
 formacontagio <- df$forma_contagio[df$covid != "no"]
 data <- data.frame(table(formacontagio))
 percents <- (data$Freq/sum(data$Freq))*100
+setwd('..')
 lbls <- data$formacontagio
 lbls <- paste(lbls, percents)
 lbls <- paste(lbls, "%", sep="")

@@ -6,10 +6,6 @@ db_table <- 'Persona'
 db_host <- 'remotemysql.com' # for local access
 db_port <- 3306
 # 3. Read data from db
-<<<<<<< HEAD
-
-=======
->>>>>>> 5881021ac1ac7c9c70f1ca11aa5c341a7efd6260
 mydb <-  dbConnect(MySQL(), user = db_user, password = db_password,
                    dbname = db_name, host = db_host, port = db_port)
 s <- paste0("select * from ", db_table)
@@ -18,6 +14,7 @@ df <-  fetch(rs, n = -1)
 formacontagio <- df$forma_contagio[df$covid != "no"]
 data <- data.frame(table(formacontagio))
 percents <- (data$Freq/sum(data$Freq))*100
+setwd('..')
 lbls <- data$formacontagio
 lbls <- paste(lbls, percents)
 lbls <- paste(lbls, "%", sep="")

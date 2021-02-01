@@ -14,6 +14,7 @@ df <-  fetch(rs, n = -1)
 hospital <- df$hospitalizado
 sintomas <- df$sintomas
 data <- data.frame(hospital,sintomas)
+setwd('..')
 png(filename = "imagenes\\sintomaspacientes.png", width = 500, height = 500)
 barplot(table(data), col = c("blue","red"), beside = TRUE)
 legend("topright", c("no hospitalizado","hospitalizado"),fill= c("blue","red"))

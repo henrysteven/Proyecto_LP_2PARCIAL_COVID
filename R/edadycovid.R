@@ -21,7 +21,8 @@ table(grupoedad)
 data <- data.frame(covid,grupoedad)
 
 
-png(filename = "imagenes\\edadycovid.png", width = 500, height = 500)
+
+png(filename = "imagenes\\edadycovid.png",width = 10, height = 6, units = 'in', res = 300)
 barplot(table(data),names.arg = c("0-13", "13-21", "21-30", "30-60","60+"), col = c("blue","red"), beside = TRUE)
 legend("topright", c("negativo","positivo"),fill= c("blue","red"))
 dev.off()

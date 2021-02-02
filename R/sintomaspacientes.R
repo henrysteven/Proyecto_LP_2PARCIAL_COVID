@@ -67,7 +67,7 @@ value_matrix <- matrix( nrow = 2, ncol = length(unicossintomas))
 value_matrix[1,]<- data$sihospitalizados
 value_matrix[2,]<- data$nohospitalizados
 setwd('..')
-png(filename = "imagenes\\sintomaspacientes.png", width = 800, height = 600)
+png(filename = "imagenes\\sintomaspacientes.png",width = 10, height = 10, units = 'in', res = 300)
 par(mar= c(10, 4.5, 2, 2) + 0.1)
 barplot(value_matrix,names.arg = unicossintomas, col = c("red","blue"), beside = TRUE, las = 2, cex.names = 0.70)
 legend("topleft", c("hospitalizado","no hospitalizado"),fill= c("red","blue"), cex = 0.75)

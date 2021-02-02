@@ -18,7 +18,7 @@ setwd('..')
 lbls <- data$formacontagio
 lbls <- paste(lbls, percents)
 lbls <- paste(lbls, "%", sep="")
-png(filename = "imagenes\\formacontagio.png", width = 500, height = 500)
+png(filename = "imagenes\\formacontagio.png",width = 10, height = 6, units = 'in', res = 300)
 
 pie(data$Freq, labels = lbls, col = rainbow(length(lbls)),main = "Piechart de formas de contagio")
 dev.off()

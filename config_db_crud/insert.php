@@ -35,13 +35,8 @@
         }
         $link -> close();
     }
-<<<<<<< HEAD
    
      $linea = 0;
-=======
-    //insertar_Fallecido("0985046813","YYY","zzz","M","ninguna","no","0950648139");     
-  /*   $linea = 0;
->>>>>>> 9f9f5d1c11168284635ebc9453b4a45748303168
     //Abrimos nuestro archivo
     $archivo = fopen("../datos2.csv", "r");
     $archivo2 = fopen("../datos3.csv", "r");

@@ -14,6 +14,14 @@
         $link -> close();
     } 
     function insertar_Persona($cedula,$nombre,$apellido,$ciudad,$covid,$forma_contagio,$tuvo_sintomas,$sexo,$hospitalizados,$edad,$fecha,$sintomas){
+        $regex = "#^[0-9\-]{10}$#";
+        $check = strlen($cedula);
+        $check2 = preg_match($regex, $cedula);
+        if($check!= 10 && $check2 == 0){
+            $cadena = '<div class = "mensaje" id=mensaje2>Cedula incorrecta.</div>';
+            echo $cadena;
+              return 1;
+        }
         include("conexion.php");
         $sql = "SHOW DATABASES";
         $rs = $link ->query($sql);
@@ -53,6 +61,7 @@
     }*/
     //Cerramos el archivo
     //fclose($archivo); 
+    /*
     $linea = 0;
     //Abrimos nuestro archivo
     $archivo = fopen("../datos3.csv", "r");
@@ -72,5 +81,5 @@
         insertar_Fallecido($cedula_fallecido,$nombre_fallecido,$apellido_fallecido,$sexo,$causa_muerte,$caso_sospechoso,"0950648139");
     }
     //Cerramos el archivo
-    fclose($archivo);
+    fclose($archivo);*/
 ?>

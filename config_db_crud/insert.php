@@ -14,21 +14,34 @@
         $link -> close();
     } 
     function insertar_Persona($cedula,$nombre,$apellido,$ciudad,$covid,$forma_contagio,$tuvo_sintomas,$sexo,$hospitalizados,$edad,$fecha,$sintomas){
+        $regex = "#^[0-9\-]{10}$#";
+        $check = strlen($cedula);
+        $check2 = preg_match($regex, $cedula);
+        if($check!= 10 && $check2 == 0){
+            $cadena = '<div class = "mensaje" id=mensaje2>Cedula incorrecta.</div>';
+            echo $cadena;
+              return 1;
+        }
         include("conexion.php");
         $sql = "SHOW DATABASES";
         $rs = $link ->query($sql);
         $query = "INSERT INTO Persona (cedula, nombre, apellido, ciudad, covid, forma_contagio, tuvo_sintomas, sexo, hospitalizado, edad, fecha, sintomas) VALUES ('$cedula','$nombre','$apellido','$ciudad','$covid','$forma_contagio','$tuvo_sintomas','$sexo','$hospitalizados','$edad','$fecha','$sintomas')";
         $result = mysqli_query($link, $query);
         if ($result){
-            $cadena = '<div id=mensaje>Datos guardados correctamente</div>';
+            $cadena = '<div class = "mensaje" id=mensaje>Datos guardados correctamente</div>';
             echo $cadena;
         }else{
-            echo "<div id=mensaje2>" . mysqli_error($link).'</div>';
+            echo "<div class ='mensaje' id=mensaje2>" . mysqli_error($link).'</div>';
         }
         $link -> close();
     }
+<<<<<<< HEAD
    
      $linea = 0;
+=======
+    //insertar_Fallecido("0985046813","YYY","zzz","M","ninguna","no","0950648139");     
+  /*   $linea = 0;
+>>>>>>> 9f9f5d1c11168284635ebc9453b4a45748303168
     //Abrimos nuestro archivo
     $archivo = fopen("../datos2.csv", "r");
     $archivo2 = fopen("../datos3.csv", "r");
@@ -67,9 +80,15 @@
         //insertar_Persona($cedula,$nombre,$apellido,$ciudad,$covid,$forma_contagio,$tuvo_sintomas,$sexo,$hospitalizados,$edad,$fecha,$sintomas);
     }
     //Cerramos el archivo
+<<<<<<< HEAD
     fclose($archivo); 
     fclose($archivo2);
     /* $linea2 = 0;
+=======
+    //fclose($archivo); 
+    /*
+    $linea = 0;
+>>>>>>> 9f9f5d1c11168284635ebc9453b4a45748303168
     //Abrimos nuestro archivo
     //Lo recorremos
     while (($datos2 = fgetcsv($archivo2, 3000,",")) == true) 
@@ -87,5 +106,9 @@
         insertar_Fallecido($cedula_fallecido,$nombre_fallecido,$apellido_fallecido,$sexo,$causa_muerte,$caso_sospechoso,$cedula);
     }
     //Cerramos el archivo
+<<<<<<< HEAD
     fclose($archivo); */
+=======
+    fclose($archivo);*/
+>>>>>>> 9f9f5d1c11168284635ebc9453b4a45748303168
 ?>

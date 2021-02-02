@@ -28,18 +28,33 @@
         $link -> close();
     }
    
-  /*   $linea = 0;
+     $linea = 0;
     //Abrimos nuestro archivo
     $archivo = fopen("../datos2.csv", "r");
+    $archivo2 = fopen("../datos3.csv", "r");
+
     //Lo recorremos
     while (($datos = fgetcsv($archivo, 3000,",")) == true) 
     {
         $num = count($datos);
         $linea++;
+        $cedula = $datos[2];
+
+        if(($datos2 = fgetcsv($archivo2, 3000,",")) == true){
+
+            $cedula_fallecido = $datos2[0];
+            $nombre_fallecido= $datos2[1];
+            $apellido_fallecido = $datos2[2];
+            $sexo = $datos2[3];
+            $causa_muerte = $datos2[4];
+            $caso_sospechoso = $datos2[5];
+            insertar_Fallecido($cedula_fallecido,$nombre_fallecido,$apellido_fallecido,$sexo,$causa_muerte,$caso_sospechoso,$cedula);
+
+
+        }
     //Recorremos las columnas de esa linea
         $nombre = $datos[0];
         $apellido= $datos[1];
-        $cedula = $datos[2];
         $covid = $datos[3];
         $ciudad = $datos[4];
         $forma_contagio = $datos[5];
@@ -49,17 +64,17 @@
         $edad = $datos[9];
         $fecha = $datos[10];
         $sintomas = $datos[11];
-        insertar_Persona($cedula,$nombre,$apellido,$ciudad,$covid,$forma_contagio,$tuvo_sintomas,$sexo,$hospitalizados,$edad,$fecha,$sintomas);
-    }*/
+        //insertar_Persona($cedula,$nombre,$apellido,$ciudad,$covid,$forma_contagio,$tuvo_sintomas,$sexo,$hospitalizados,$edad,$fecha,$sintomas);
+    }
     //Cerramos el archivo
-    //fclose($archivo); 
-    $linea = 0;
+    fclose($archivo); 
+    fclose($archivo2);
+    /* $linea2 = 0;
     //Abrimos nuestro archivo
-    $archivo = fopen("../datos3.csv", "r");
     //Lo recorremos
-    while (($datos = fgetcsv($archivo, 3000,",")) == true) 
+    while (($datos2 = fgetcsv($archivo2, 3000,",")) == true) 
     {
-        $num = count($datos);
+        $num2 = count($datos2);
         $linea++;
     //Recorremos las columnas de esa linea
         $cedula_fallecido = $datos[0];
@@ -69,8 +84,8 @@
         $causa_muerte = $datos[4];
         $caso_sospechoso = $datos[5];
         $cedula = $datos[6];
-        insertar_Fallecido($cedula_fallecido,$nombre_fallecido,$apellido_fallecido,$sexo,$causa_muerte,$caso_sospechoso,"0950648139");
+        insertar_Fallecido($cedula_fallecido,$nombre_fallecido,$apellido_fallecido,$sexo,$causa_muerte,$caso_sospechoso,$cedula);
     }
     //Cerramos el archivo
-    fclose($archivo);
+    fclose($archivo); */
 ?>

@@ -14,17 +14,21 @@ rs <- dbSendQuery(mydb, s)
 df <-  fetch(rs, n = -1)
 df
 setwd('..')
+library(lubridate)
 covid <- df$covid
-edad <- df$edad
-grupoedad <- cut(edad, breaks=c(0,13,21,30,60,Inf))
-table(grupoedad)
-data <- data.frame(covid,grupoedad)
+fecha <- df$fecha
+fecha1 <- parse_date_time(fecha,"ymd")
+datos <- data.frame(covid,fecha1)
+datos$fecha1 <- format(datos$fecha1, format="%Y-%B") 
+datos2 <- datos[datos$covid=="si",]
+png(filename = "imagenes\\contagiadosPorfecha.png", width = 500, height = 500)
 
+barplot(table(datos2$fecha), main="Cantidad de contagiados de COVID-19 por Año y Mes",las=2,col=c("green3","red"),ylim = c(0,25)
+        ,border = 1,ylab = "Número de contagiados")
 
-png(filename = "imagenes\\edadycovid.png", width = 500, height = 500)
-barplot(table(data),names.arg = c("0-13", "13-21", "21-30", "30-60","60+"), col = c("blue","red"), beside = TRUE)
-legend("topright", c("negativo","positivo"),fill= c("blue","red"))
 dev.off()
 on.exit(dbDisconnect(mydb))
+
+
 
 

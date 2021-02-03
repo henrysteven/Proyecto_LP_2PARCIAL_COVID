@@ -13,7 +13,8 @@ rs <- dbSendQuery(mydb, s)
 df <-  fetch(rs, n = -1)
 formacontagio <- df$forma_contagio[df$covid != "no"]
 data <- data.frame(table(formacontagio))
-percents <- (data$Freq/sum(data$Freq))*100
+percents <- format(round((data$Freq/sum(data$Freq))*100,2),nsmall = 2)
+percents
 setwd('..')
 lbls <- data$formacontagio
 lbls <- paste(lbls, percents)

@@ -19,9 +19,17 @@ setwd('..')
 lbls <- data$formacontagio
 lbls <- paste(lbls, percents)
 lbls <- paste(lbls, "%", sep="")
-png(filename = "imagenes\\formacontagio.png",width = 10, height = 6, units = 'in', res = 300)
-
-pie(data$Freq, labels = lbls, col = rainbow(length(lbls)),main = "Piechart de formas de contagio")
+png(filename = "imagenes\\formacontagio.png",width = 10, height = 10, units = 'in', res = 300)
+library(ggplot2)
+library(scales)
+ggplot(data,aes(x="",y=percents, fill=lbls))+
+  geom_bar(stat = "identity",
+           color="white")+
+  geom_text(aes(label=percents),
+            position=position_stack(vjust=0.5),color="white",size=4)+
+  coord_polar(theta = "y")+
+  theme_void()+
+  labs(title="Piechart de formas de contagio")
 dev.off()
 on.exit(dbDisconnect(mydb))
 
